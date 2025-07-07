@@ -3,6 +3,7 @@ Feature: Website Automation with Gemini CLI
   I want to test websites using Gemini CLI with Playwright MCP
   So that I can verify website functionality with BDD approach
 
+  @login @smoke
   Scenario Outline: Test website login with different credentials
     Given I have test data for "<website>"
     When I execute gemini command to navigate and login with "<username>" and "<password>"
@@ -14,6 +15,7 @@ Feature: Website Automation with Gemini CLI
       | https://www.saucedemo.com/v1/     | locked_out_user | secret_sauce | error          |
       | https://www.saucedemo.com/v1/     | invalid_user    | wrong_pass   | error          |
 
+  @search @regression
   Scenario: Search functionality test
     Given I navigate to "https://www.siemens.com/global/en.html"
     When I search for "sigreen" using gemini command

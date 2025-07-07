@@ -1,4 +1,3 @@
-
 {
   "name": "playwright-mcp-gemini",
   "version": "1.0.0",
@@ -10,12 +9,23 @@
     "check-gemini": "gemini --version",
     "list-tools": "gemini /tools",
     "test:bdd": "npx cucumber-js",
-    "test:bdd-report": "npx cucumber-js --format html:reports/cucumber-report.html"
+    "test:bdd-report": "npx cucumber-js --format html:reports/cucumber-report.html",
+    "test:smoke": "npx cucumber-js --tags @smoke",
+    "test:login": "npx cucumber-js --tags @login",
+    "test:search": "npx cucumber-js --tags @search"
   },
   "dependencies": {
     "@playwright/mcp": "latest"
   },
-  "keywords": ["playwright", "mcp", "gemini-cli", "automation"],
+  "keywords": [
+    "playwright",
+    "mcp",
+    "gemini-cli",
+    "automation"
+  ],
   "author": "Your Name",
-  "license": "MIT"
+  "license": "MIT",
+  "devDependencies": {
+    "@cucumber/cucumber": "^11.3.0"
+  }
 }
