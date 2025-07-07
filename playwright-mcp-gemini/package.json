@@ -1,0 +1,21 @@
+
+{
+  "name": "playwright-mcp-gemini",
+  "version": "1.0.0",
+  "description": "Playwright MCP with Gemini CLI automation project",
+  "main": "scripts/siemens-search.js",
+  "scripts": {
+    "start": "node scripts/siemens-search.js",
+    "test-mcp": "npx @playwright/mcp@latest",
+    "check-gemini": "gemini --version",
+    "list-tools": "gemini /tools",
+    "test:bdd": "npx cucumber-js",
+    "test:bdd-report": "npx cucumber-js --format html:reports/cucumber-report.html"
+  },
+  "dependencies": {
+    "@playwright/mcp": "latest"
+  },
+  "keywords": ["playwright", "mcp", "gemini-cli", "automation"],
+  "author": "Your Name",
+  "license": "MIT"
+}
