@@ -12,10 +12,14 @@
     "test:bdd-report": "npx cucumber-js --format html:reports/cucumber-report.html",
     "test:smoke": "npx cucumber-js --tags @smoke",
     "test:login": "npx cucumber-js --tags @login",
-    "test:search": "npx cucumber-js --tags @search"
+    "test:search": "npx cucumber-js --tags @search",
+    "generate-testplan": "node scripts/testPlanGenerator.js",
+    "generate-scenarios": "node scripts/testScenarioGenerator.js"
   },
   "dependencies": {
-    "@playwright/mcp": "latest"
+    "@playwright/mcp": "latest",
+    "mammoth": "^1.6.0",
+    "officegen": "^0.6.5"
   },
   "keywords": [
     "playwright",
