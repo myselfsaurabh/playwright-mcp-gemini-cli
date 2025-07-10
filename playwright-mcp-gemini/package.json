@@ -13,8 +13,11 @@
     "test:smoke": "npx cucumber-js --tags @smoke",
     "test:login": "npx cucumber-js --tags @login",
     "test:search": "npx cucumber-js --tags @search",
+    "test:asr": "npx cucumber-js --tags @ASR",
     "generate-testplan": "node scripts/testPlanGenerator.js",
-    "generate-scenarios": "node scripts/testScenarioGenerator.js"
+    "generate-scenarios": "node scripts/testScenarioGenerator.js",
+    "generate-automation": "node scripts/testAutomationGenerator.js",
+    "generate-stepdefs": "node scripts/stepdefGenerator.js"
   },
   "dependencies": {
     "@playwright/mcp": "latest",

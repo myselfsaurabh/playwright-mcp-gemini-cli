@@ -202,9 +202,9 @@ class TestScenarioGenerator {
             // Execute Gemini CLI command
             console.log('[INFO] Calling Gemini CLI (this may take a moment)...');
             
-            // Use proper Gemini CLI syntax: read from stdin
-            const geminiCommand = `type "${tempPromptFile}" | gemini > "${tempOutputFile}"`;
-            execSync(geminiCommand, { 
+            // Use proper Gemini CLI syntax with model parameter: read from stdin
+            const geminiCommand = `type "${tempPromptFile}" | gemini --model "gemini-2.5-flash-lite-preview-06-17" > "${tempOutputFile}"`;
+            execSync(geminiCommand, {
                 stdio: 'pipe',
                 shell: true,
                 cwd: path.join(__dirname, '..')

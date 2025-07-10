@@ -9,7 +9,7 @@ function executeGeminiCommand(prompt) {
         console.log(`Executing Gemini CLI: ${prompt.substring(0, 100)}...`);
 
         // Execute gemini command directly (preserving original implementation)
-        const result = execSync(`gemini -p "${prompt}"`, {
+        const result = execSync(`gemini -p "${prompt}" --model "gemini-2.5-flash-lite-preview-06-17"`, {
             encoding: 'utf8',
             stdio: 'pipe',
             timeout: 60000

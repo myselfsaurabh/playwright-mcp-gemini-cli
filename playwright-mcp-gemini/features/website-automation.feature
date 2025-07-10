@@ -10,10 +10,10 @@ Feature: Website Automation with Gemini CLI
     Then I should capture screenshot and verify "<expectedResult>"
 
     Examples:
-      | website                           | username        | password     | expectedResult |
-      | https://www.saucedemo.com/v1/     | standard_user   | secret_sauce | success        |
-      | https://www.saucedemo.com/v1/     | locked_out_user | secret_sauce | error          |
-      | https://www.saucedemo.com/v1/     | invalid_user    | wrong_pass   | error          |
+      | website                        | username        | password     | expectedResult |
+      | https://www.saucedemo.com/     | standard_user   | secret_sauce | success        |
+      | https://www.saucedemo.com/     | locked_out_user | secret_sauce | error          |
+      | https://www.saucedemo.com/     | invalid_user    | wrong_pass   | error          |
 
   @search @regression
   Scenario: Search functionality test

@@ -27,10 +27,10 @@ async function runSiemensSearch() {
         // Execute the Gemini CLI command with the task
         console.log('📱 Calling Gemini CLI with Playwright MCP...');
         
-        const command = `gemini -p "${taskPrompt}"`;
-        
+        const command = `gemini -p "${taskPrompt}" --model "gemini-2.5-flash-lite-preview-06-17"`;
+
         console.log('Executing command:', command);
-        
+
         // Execute the command
         const result = execSync(command, {
             encoding: 'utf8',

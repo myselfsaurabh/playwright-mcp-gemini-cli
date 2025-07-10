@@ -1,4 +1,8 @@
 {
+  "gemini": {
+    "model": "gemini-2.5-flash-preview-06-17",
+    "timeout": 120
+  },
   "mcpServers": {
     "playwright": {
       "command": "npx",
