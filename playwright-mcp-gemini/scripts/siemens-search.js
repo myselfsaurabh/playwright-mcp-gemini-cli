@@ -29,7 +29,7 @@ async function runSiemensSearch() {
         
         const command = `gemini -p "${taskPrompt}"`;
         
-        console.log('Executing command:', command);
+        console.log('Executing command: ', command);
         
         // Execute the command
         const result = execSync(command, {
