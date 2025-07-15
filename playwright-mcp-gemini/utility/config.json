@@ -1,0 +1,40 @@
+{
+  "paths": {
+    "prd": "application-prd/SauceDemo_PRD.docx",
+    "testPlanPrompt": "systemPrompts/testPlanGeneratorPrompt.md",
+    "testPlanOutput": "testPlan/saucedemoplan.docx",
+    "testScenarioPrompt": "systemPrompts/testScenarioGenerationPrompt.md",
+    "testScenarioOutput": "testScenario/saucedemoScenario.docx",
+    "testAutomationPrompt": "systemPrompts/testAutomationPrompt.md",
+    "testAutomationInput": "testScenario/saucedemoScenario20250711091258.docx",
+    "testAutomationOutput": "scriptsForReviews/automation-scripts.txt",
+    "stepDefinitionPrompt": "systemPrompts/stepDefinitionPrompt.md",
+    "stepDefinitionInput": "scriptsForReviews/feature-files-*",
+    "stepDefinitionOutput": "step-definitions",
+    "tempDir": "temp"
+  },
+  "gemini": {
+    "model": "gemini-2.5-flash-preview-06-17",
+    "timeout": 120
+  },
+  "docx": {
+    "testPlan": {
+      "title": "SauceDemo Test Plan",
+      "subject": "Detailed Test Plan Generated from PRD",
+      "keywords": "test plan, saucedemo, automation, testing",
+      "description": "Comprehensive test plan for SauceDemo application"
+    },
+    "testScenario": {
+      "title": "SauceDemo Test Scenarios",
+      "subject": "Detailed Test Scenarios Generated from Test Plan",
+      "keywords": "test scenarios, saucedemo, BDD, functional testing",
+      "description": "Comprehensive BDD test scenarios for SauceDemo application"
+    },
+    "testAutomation": {
+      "title": "SauceDemo Automation Scripts",
+      "subject": "Playwright BDD Feature Files Generated from Test Scenarios",
+      "keywords": "automation scripts, playwright, BDD, feature files, gherkin",
+      "description": "Playwright BDD feature files for automated testing of SauceDemo application"
+    }
+  }
+}
