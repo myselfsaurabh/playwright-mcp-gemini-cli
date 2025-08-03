@@ -5,7 +5,7 @@ Feature: Website Automation with Gemini CLI
 
   @login @smoke
   Scenario Outline: Test website login with different credentials
-    Given I have test data for "<website>"
+    Given I have test data  for "<website>"
     When I execute gemini command to navigate and login with "<username>" and "<password>"
     Then I should capture screenshot and verify "<expectedResult>"
 
