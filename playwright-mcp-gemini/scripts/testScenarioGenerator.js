@@ -8,7 +8,7 @@
  * 2. Uses Gemini CLI to generate detailed test scenarios
  * 3. Converts response to saucedemoScenario.docx
  * 
- * Usage: node scripts/testScenarioGenerator.js
+ * Usage: node scripts/testScenarioGenerator.js 
  */
 
 const fs = require('fs');
@@ -44,7 +44,7 @@ const findLatestTestPlan = () => {
     const testPlanDir = path.join(__dirname, '..', path.dirname(config.paths.testPlanOutput));
 
     if (!fs.existsSync(testPlanDir)) {
-        throw new Error(`Test plan directory not found: ${testPlanDir}`);
+        throw new Error(`Test plan directory not  found: ${testPlanDir}`);
     }
 
     const files = fs.readdirSync(testPlanDir)
