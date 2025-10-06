@@ -44,7 +44,7 @@ const findLatestTestPlan = () => {
     const testPlanDir = path.join(__dirname, '..', path.dirname(config.paths.testPlanOutput));
 
     if (!fs.existsSync(testPlanDir)) {
-        throw new Error(`Test plan directory not found: ${testPlanDir}`);
+        throw new Error(`Test plan directory not  found: ${testPlanDir}`);
     }
 
     const files = fs.readdirSync(testPlanDir)
