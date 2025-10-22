@@ -65,7 +65,7 @@ class StepdefGenerator {
             execSync('gemini --version', { stdio: 'pipe' });
             console.log('[SUCCESS] Gemini CLI is available');
         } catch (error) {
-            throw new Error('[ERROR] Gemini CLI not found. Please install  Gemini CLI first.');
+            throw new Error('[ERROR] Gemini CLI not found. Please install Gemini CLI first.');
         }
     }
 
