@@ -131,7 +131,7 @@
 - **Data Quality Measures**:
   - Validates extracted data against known candidate list
   - Flags low-confidence extractions for human review
-  - Maintains audit trail of all feedback in PostgreSQL
+  - Maintains audit trail of all feedback in PostgreSQL 
 
 ### **3. LangGraph Workflow Orchestration**
 
